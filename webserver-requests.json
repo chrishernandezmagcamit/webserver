@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "ecdc87fe-ef84-462d-b4a7-b2e5a9c8574d",
+		"name": "test web server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "elephants",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\": \"Hello World!\"}\n\n"
+				},
+				"url": {
+					"raw": "localhost:3000/elephants",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"elephants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "visits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\": \"Frederick\"}"
+				},
+				"url": {
+					"raw": "localhost:3000/visits",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"visits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sanctuaries",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\": \"Hello World!\"}\n\n"
+				},
+				"url": {
+					"raw": "localhost:3000/sanctuaries",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sanctuaries"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
